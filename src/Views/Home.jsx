@@ -40,7 +40,7 @@ function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-   
+
     const fetchProducts = async () => {
       try {
         const result = await axios('https://65fda651b2a18489b3853422.mockapi.io/products/product');
@@ -76,7 +76,7 @@ function Home() {
                     )}
           </div>
 
-          <div className="flex gap-2 items-center 2xl:flex 2xl:flex-row 2xl:items-center 2xl:gap-2 lg:flex lg:items-center lg:gap-2">
+          <div className="flex gap-2 items-center 2xl:flex 2xl:flex-row 2xl:items-center 2xl:gap-4 lg:flex lg:items-center lg:gap-3">
             <img src={Logo} alt={Logo} />
             <p className="font-semibold 2xl:font-bold 2xl:text-4xl lg:font-bold lg:text-2xl">Furniro</p>
           </div>
@@ -100,7 +100,7 @@ function Home() {
       
       <div className="h-[45vh] bg-cover sm:h-[50vh] sm:bg-cover lg:h-[85vh] lg:bg-cover" style={{ backgroundImage: `url(${Sala})`, backgroundPosition: 'center' }}>
         <div className="w-full pt-32 justify-end pr-4 sm:pr-10 sm:pt-52 sm:justify-end 2xl:pr-20 2xl:pt-40 flex 2xl:flex-row 2xl:justify-end xl:pt-40 lg:pt-32 lg:justify-end lg:pr-14"> 
-          <div className="bg-orange-100 w-[57%] px-3 py-3 sm:w-[45%] sm:px-4 sm:py-4 2xl:w-[35%] 2xl:px-8 2xl:py-16 lg:w-[35%] xl:w-[30%] lg:py-8 lg:px-8">
+          <div className="bg-orange-100 w-[57%] px-3 py-3 sm:w-[45%] sm:px-4 sm:py-4 2xl:w-[35%] 2xl:px-8 2xl:py-12 lg:w-[35%] xl:w-[30%] lg:py-8 lg:px-8">
             <p className="text-xs font-semibold sm:text-sm mb-1 2xl:text-lg 2xl:font-semibold text-black 2xl:mb-2 lg:text-sm lg:font-semibold lg:mb-2">New Arrival</p>
             <p className="text-sm sm:text-lg font-bold 2xl:text-5xl 2xl:font-bold text-orange-500 2xl:mb-2 lg:text-3xl lg:font-bold lg:mb-1">Discover Our</p>
             <p className="text-sm sm:text-lg font-bold mb-1 2xl:text-5xl 2xl:font-bold text-orange-500 2xl:mb-4 lg:text-3xl lg:font-bold lg:mb-3">New Collection</p>
@@ -198,7 +198,7 @@ function Home() {
           </div>
 
           <div className="w-full flex justify-center py-10">
-            <button className="comic-button2">Show More</button>
+            <button className="comic-button2 sm:px-12 sm:py-4 sm:text-sm lg:text-base">Show More</button>
           </div>
 
         </div>
@@ -213,7 +213,7 @@ function Home() {
             <h2 className="text-base sm:text-lg font-bold 2xl:text-5xl 2xl:font-extrabold lg:text-4xl lg:font-bold">50+ Beautiful rooms inspiration</h2>
             <p className="text-xs sm:text-sm sm:font-semibold 2xl:text-lg 2xl:font-semibold lg:text-base lg:font-semibold">Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
             <div>
-              <button className="comic-button2 px-4 sm:px-9 sm:py-3">Explore More</button>
+              <button className="comic-button2 px-4 sm:px-9 sm:py-3 2xl:px-12 2xl:py-4 lg:text-lg">Explore More</button>
             </div>
           </div>
 
