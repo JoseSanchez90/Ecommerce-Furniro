@@ -59,7 +59,7 @@ function Home() {
       {/* BARRA DE NAVEGACION */}
 
       <nav className="w-full bg-gray-100">
-        <div className="flex flex-row justify-between items-center px-6 py-3 sm:py-4 sm:px-10 2xl:flex 2xl:flex-row 2xl:justify-between 2xl:items-center 2xl:px-40 2xl:py-6 lg:flex lg:justify-between lg:items-center lg:px-20 lg:py-5">
+        <div className="flex flex-row items-center justify-between px-6 py-3 sm:py-4 sm:px-10 2xl:flex 2xl:flex-row 2xl:justify-between 2xl:items-center 2xl:px-40 2xl:py-6 lg:flex lg:justify-between lg:items-center lg:px-20 lg:py-5">
 
           <div className="lg:hidden">
             <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="flex items-center" tabIndex="0">
@@ -67,31 +67,31 @@ function Home() {
             </button>
 
             {isMobileMenuOpen && (
-                        <div className="absolute z-50 flex flex-col w-2/6 sm:w-1/5 justify-start text-white font-bold mt-1 bg-orange-300 rounded-md shadow-lg">
-                            <a tabIndex="-1" href="#" className="dropdown-item text-sm hover:text-orange-600 hover:bg-orange-400 rounded-md py-2 px-4">Home</a>
-                            <a tabIndex="-1" href="#" className="dropdown-item text-sm hover:text-orange-600 hover:bg-orange-400 rounded-md py-2 px-4">Shop</a>
-                            <a tabIndex="-1" href="#" className="dropdown-item text-sm hover:text-orange-600 hover:bg-orange-400 rounded-md py-2 px-4">About</a>
-                            <a tabIndex="-1" href="#" className="dropdown-item text-sm hover:text-orange-600 hover:bg-orange-400 rounded-md py-2 px-4">Contact</a>
+                        <div className="absolute z-50 flex flex-col justify-start w-2/6 mt-1 font-bold text-white bg-orange-300 rounded-md shadow-lg sm:w-1/5">
+                            <a tabIndex="-1" href="#" className="px-4 py-2 text-sm rounded-md dropdown-item hover:text-orange-600 hover:bg-orange-400">Inicio</a>
+                            <a tabIndex="-1" href="#" className="px-4 py-2 text-sm rounded-md dropdown-item hover:text-orange-600 hover:bg-orange-400">Productos</a>
+                            <a tabIndex="-1" href="#" className="px-4 py-2 text-sm rounded-md dropdown-item hover:text-orange-600 hover:bg-orange-400">Nosotros</a>
+                            <a tabIndex="-1" href="#" className="px-4 py-2 text-sm rounded-md dropdown-item hover:text-orange-600 hover:bg-orange-400">Contacto</a>
                         </div>
                     )}
           </div>
 
-          <div className="flex gap-2 items-center 2xl:flex 2xl:flex-row 2xl:items-center 2xl:gap-4 lg:flex lg:items-center lg:gap-3">
+          <div className="flex items-center gap-2 2xl:flex 2xl:flex-row 2xl:items-center 2xl:gap-4 lg:flex lg:items-center lg:gap-3">
             <img src={Logo} alt={Logo} />
             <p className="font-semibold 2xl:font-bold 2xl:text-4xl lg:font-bold lg:text-2xl">Furniro</p>
           </div>
 
           <div className="hidden 2xl:flex 2xl:flex-row 2xl:gap-20 2xl:font-bold lg:flex lg:gap-8 lg:font-semibold">
-            <a href="" className="hover:text-orange-500 subline">Home</a>
-            <a href="" className="hover:text-orange-500 subline">Shop</a>
-            <a href="" className="hover:text-orange-500 subline">About</a>
-            <a href="" className="hover:text-orange-500 subline">Contact</a>
+            <a href="" className="hover:text-orange-500 subline">Incio</a>
+            <a href="" className="hover:text-orange-500 subline">Productos</a>
+            <a href="" className="hover:text-orange-500 subline">Nosotros</a>
+            <a href="" className="hover:text-orange-500 subline">Contacto</a>
           </div>
 
           <div className="flex gap-4 sm:flex sm:gap-6 2xl:flex 2xl:flex-row 2xl:gap-10 lg:flex lg:gap-10">
-            <a href="" className="hover:text-orange-500 hover:scale-110 duration-200"><i className="fa-regular fa-user"></i></a>
-            <a href="" className="hover:text-orange-500 hover:scale-110 duration-200"><i className="fa-solid fa-magnifying-glass"></i></a>
-            <a href="" className="hover:text-orange-500 hover:scale-110 duration-200"><i className="fa-solid fa-cart-shopping"></i></a>
+            <a href="" className="duration-200 hover:text-orange-500 hover:scale-110"><i className="fa-regular fa-user"></i></a>
+            <a href="" className="duration-200 hover:text-orange-500 hover:scale-110"><i className="fa-solid fa-magnifying-glass"></i></a>
+            <a href="" className="duration-200 hover:text-orange-500 hover:scale-110"><i className="fa-solid fa-cart-shopping"></i></a>
           </div>
         </div>
       </nav>
@@ -99,47 +99,47 @@ function Home() {
       {/* SLIDER */}
       
       <div className="h-[45vh] bg-cover sm:h-[50vh] sm:bg-cover lg:h-[85vh] lg:bg-cover" style={{ backgroundImage: `url(${Sala})`, backgroundPosition: 'center' }}>
-        <div className="w-full pt-32 justify-end pr-4 sm:pr-10 sm:pt-52 sm:justify-end 2xl:pr-20 2xl:pt-40 flex 2xl:flex-row 2xl:justify-end xl:pt-40 lg:pt-32 lg:justify-end lg:pr-14"> 
+        <div className="flex justify-end w-full pt-32 pr-4 sm:pr-10 sm:pt-52 sm:justify-end 2xl:pr-20 2xl:pt-40 2xl:flex-row 2xl:justify-end xl:pt-40 lg:pt-32 lg:justify-end lg:pr-14"> 
           <div className="bg-orange-100 w-[57%] px-3 py-3 sm:w-[45%] sm:px-4 sm:py-4 2xl:w-[35%] 2xl:px-8 2xl:py-12 lg:w-[35%] xl:w-[30%] lg:py-8 lg:px-8">
-            <p className="text-xs font-semibold sm:text-sm mb-1 2xl:text-lg 2xl:font-semibold text-black 2xl:mb-2 lg:text-sm lg:font-semibold lg:mb-2">New Arrival</p>
-            <p className="text-sm sm:text-lg font-bold 2xl:text-5xl 2xl:font-bold text-orange-500 2xl:mb-2 lg:text-3xl lg:font-bold lg:mb-1">Discover Our</p>
-            <p className="text-sm sm:text-lg font-bold mb-1 2xl:text-5xl 2xl:font-bold text-orange-500 2xl:mb-4 lg:text-3xl lg:font-bold lg:mb-3">New Collection</p>
-            <p className="text-xs mb-2 sm:text-base font-semibold sm:mb-4 2xl:text-base 2xl:font-semibold text-black 2xl:mb-10 lg:text-base lg:font-semibold lg:mb-6">Access our exclusive catalog and select the furniture of your preference.</p>
-            <button className="comic-button px-4 py-2 text-xs sm:px-8 sm:py-3 sm:text-sm lg:py-6 lg:px-14 lg:text-lg">BUY NOW</button>
+            <p className="mb-1 text-xs font-semibold text-black sm:text-sm 2xl:text-lg 2xl:font-semibold 2xl:mb-2 lg:text-sm lg:font-semibold lg:mb-2">Nuevos Productos</p>
+            <p className="text-sm font-bold text-orange-500 sm:text-lg 2xl:text-5xl 2xl:font-bold 2xl:mb-2 lg:text-3xl lg:font-bold lg:mb-1">Descubre Nuestra</p>
+            <p className="mb-1 text-sm font-bold text-orange-500 sm:text-lg 2xl:text-5xl 2xl:font-bold 2xl:mb-4 lg:text-3xl lg:font-bold lg:mb-3">Nueva Coleccion</p>
+            <p className="mb-2 text-xs font-semibold text-black sm:text-base sm:mb-4 2xl:text-base 2xl:font-semibold 2xl:mb-10 lg:text-base lg:font-semibold lg:mb-6">Accede a nuestro catálogo exclusivo y selecciona el mueble de tu preferencia.</p>
+            <button className="px-4 py-2 text-xs text-center comic-button sm:px-8 sm:py-3 sm:text-sm lg:py-6 lg:px-14 lg:text-lg">COMPRAR AHORA</button>
           </div>
         </div>
       </div>
 
       {/* BROWSE */}
 
-      <div className="bg-gray-100 w-full h-full">
-        <div className="w-full py-32 flex flex-col justify-center">
+      <div className="w-full h-full bg-gray-100">
+        <div className="flex flex-col justify-center w-full py-32">
 
-          <div className="px-2 sm:px-auto text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">Browse The Range</h2>
-            <p className="sm:text-xl mb-8 sm:mb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div className="px-2 text-center sm:px-auto">
+            <h2 className="mb-4 text-2xl font-bold sm:text-3xl">Explora El Catalogo</h2>
+            <p className="mb-8 sm:text-xl sm:mb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
 
-          <div className="mx-4 sm:mx-10 flex flex-col sm:flex-row items-center gap-8 sm:gap-6 lg:gap-10 lg:mx-auto text-center">
+          <div className="flex flex-col items-center gap-8 mx-4 text-center sm:mx-10 sm:flex-row sm:gap-6 lg:gap-10 lg:mx-auto">
             <div>
               <div className="relative overflow-hidden">
-                <img src={Img1} alt="Mueble1" className="w-52 h-64 sm:w-60 sm:h-72 lg:w-72 lg:h-96 rounded-xl hover:scale-125 duration-300 cursor-pointer"/>
+                <img src={Img1} alt="Mueble1" className="h-64 duration-300 cursor-pointer w-52 sm:w-60 sm:h-72 lg:w-72 lg:h-96 rounded-xl hover:scale-125"/>
               </div>
-              <p className="mt-4 text-xl sm:mt-6 font-bold">Hall</p>
+              <p className="mt-4 text-xl font-bold sm:mt-6">Habitacion</p>
             </div>
 
             <div>
               <div className="relative overflow-hidden">
-                <img src={Img3} alt="Mueble3" className="w-52 h-64 sm:w-60 sm:h-72 lg:w-72 lg:h-96 rounded-xl hover:scale-125 duration-300 cursor-pointer"/>
+                <img src={Img3} alt="Mueble3" className="h-64 duration-300 cursor-pointer w-52 sm:w-60 sm:h-72 lg:w-72 lg:h-96 rounded-xl hover:scale-125"/>
               </div>
-              <p className="mt-4 text-xl sm:mt-6 font-bold">Dining</p>
+              <p className="mt-4 text-xl font-bold sm:mt-6">Cocina</p>
             </div>
 
             <div>
               <div className="relative overflow-hidden">
-                <img src={Img2} alt="Mueble2" className="w-52 h-64 sm:w-60 sm:h-72 lg:w-72 lg:h-96 rounded-xl hover:scale-125 duration-300 cursor-pointer"/>
+                <img src={Img2} alt="Mueble2" className="h-64 duration-300 cursor-pointer w-52 sm:w-60 sm:h-72 lg:w-72 lg:h-96 rounded-xl hover:scale-125"/>
               </div>
-              <p className="mt-4 text-xl sm:mt-6 font-bold">Room</p>
+              <p className="mt-4 text-xl font-bold sm:mt-6">Sala</p>
             </div>
 
           </div>
@@ -152,42 +152,42 @@ function Home() {
       <div className="w-full h-full bg-gray-100">
         <div className="2xl:w-[70%] pb-20 2xl:pb-32 lg:pb-28 mx-auto lg:w-[80%]">
           <div className="text-center">
-            <h2 className="font-bold text-2xl sm:text-3xl mb-12">Our Products</h2>
+            <h2 className="mb-12 text-2xl font-bold sm:text-3xl">Nuestros Productos</h2>
           </div>
 
-          <div className="grid grid-cols-2 mx-auto px-2 lg:px-0 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 lg:gap-5 2xl:gap-12">
+          <div className="grid grid-cols-2 gap-2 px-2 mx-auto lg:px-0 sm:grid-cols-3 lg:grid-cols-4 sm:gap-3 lg:gap-5 2xl:gap-12">
 
           {products.map((product) => (
-            <div key={product.id} className="bg-gray-200 sm:w-56 lg:w-64 2xl:w-72 relative cursor-pointer" 
+            <div key={product.id} className="relative bg-gray-200 cursor-pointer sm:w-56 lg:w-64 2xl:w-72" 
             onMouseEnter={() => handleMouseEnter(product.id)}
             onMouseLeave={handleMouseLeave}>
               {product.discount && <p className="pt-3.5 pl-2.5 m-2 rounded-full bg-orange-500 text-white font-bold absolute " style={{ width: '60px', height: '60px', lineHeight: '30px' }}>-{product.discount}%</p>}
-              <img src={product.image} alt={product.image} className="w-48 h-52 sm:w-60 sm:h-64 lg:w-72 lg:h-80 cursor-pointer object-cover" />
+              <img src={product.image} alt={product.image} className="object-cover w-48 cursor-pointer h-52 sm:w-60 sm:h-64 lg:w-72 lg:h-80" />
               {hoveredProduct === product.id && (
-                <div className="overlay absolute inset-0 flex flex-col justify-center items-center gap-6 px-3 sm:px-4">
-                  <div className="bg-black opacity-50 absolute inset-0"></div>
-                      <button className="realtive z-10">Add to cart</button>
-                    <div className="flex flex-col 2xl::flex-row gap-3 lg:gap-5">
-                      <a className="text-white hover:text-orange-400 cursor-pointer lg:text-base text-sm" style={{ position: 'relative', zIndex: 1 }}><i class="fa-solid fa-share-nodes"></i> Share</a>
-                      <a className="text-white hover:text-orange-400 cursor-pointer lg:text-base text-sm" style={{ position: 'relative', zIndex: 1 }}><i class="fa-solid fa-code-compare"></i> Compare</a>
-                      <a className="text-white hover:text-orange-400 cursor-pointer lg:text-base text-sm" style={{ position: 'relative', zIndex: 1 }}><i class="fa-regular fa-heart"></i> Like</a>
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 px-3 overlay sm:px-4">
+                  <div className="absolute inset-0 bg-black opacity-50"></div>
+                      <button className="z-10 realtive">Añadir al carrito</button>
+                    <div className="flex flex-col gap-3 2xl::flex-row lg:gap-5">
+                      <a className="text-sm text-white cursor-pointer hover:text-orange-400 lg:text-base" style={{ position: 'relative', zIndex: 1 }}><i class="fa-solid fa-share-nodes"></i> Compartir</a>
+                      <a className="text-sm text-white cursor-pointer hover:text-orange-400 lg:text-base" style={{ position: 'relative', zIndex: 1 }}><i class="fa-solid fa-code-compare"></i> Comparar</a>
+                      <a className="text-sm text-white cursor-pointer hover:text-orange-400 lg:text-base" style={{ position: 'relative', zIndex: 1 }}><i class="fa-regular fa-heart"></i> Me gusta</a>
                     </div>
                 </div>
               )}
-              <div className="p-4 flex flex-col gap-2">
+              <div className="flex flex-col gap-2 p-4">
                 <p className="text-lg font-semibold lg:text-xl lg:font-bold">{product.name}</p>
                 <p className="text-sm lg:text-base">{product.description}</p>
 
-                <div className="flex flex-col sm:flex-row justify-between items-start lg:items-center">
+                <div className="flex flex-col items-start justify-between sm:flex-row lg:items-center">
                 {product.discount ? (
                   <>
-                    <p className="font-semibold lg:font-bold">$ {Number(product.price - (product.price * product.discount / 100)).toFixed(2)}</p>
-                    <p className="text-gray-400 line-through text-sm">
-                      $ {Number(product.price).toFixed(2)}
+                    <p className="font-semibold lg:font-bold">S/ {Number(product.price - (product.price * product.discount / 100)).toFixed(2)}</p>
+                    <p className="text-sm text-gray-400 line-through">
+                      S/ {Number(product.price).toFixed(2)}
                     </p>                   
                   </>
                     ) : (
-                  <p className="font-semibold lg:font-bold">$ {Number(product.price).toFixed(2)}</p>
+                  <p className="font-semibold lg:font-bold">S/ {Number(product.price).toFixed(2)}</p>
                 )}
 
                 </div>
@@ -197,8 +197,8 @@ function Home() {
 
           </div>
 
-          <div className="w-full flex justify-center py-10">
-            <button className="comic-button2 sm:px-12 sm:py-4 sm:text-sm lg:text-base">Show More</button>
+          <div className="flex justify-center w-full py-10">
+            <button className="comic-button2 sm:px-12 sm:py-4 sm:text-sm lg:text-base">Mostrar Más</button>
           </div>
 
         </div>
@@ -206,31 +206,31 @@ function Home() {
 
       {/* ROOMS INSPIRATION */}
 
-      <div className=" w-full h-full pb-24 2xl:pb-40 lg:pb-32">
+      <div className="w-full h-full pb-24 2xl:pb-40 lg:pb-32">
         <div className="bg-orange-200 h-80 sm:h-[80%] sm:py-16 sm:px-28 lg:py-16 lg:px-20 px-6 mx-auto sm:grid sm:grid-cols-3 flex justify-center gap-3 sm:gap-5">
 
-          <div className="flex flex-col justify-center gap-2 sm:gap-4 lg:gap-6 w-40 sm:w-60 lg:w-full">
-            <h2 className="text-base sm:text-lg font-bold 2xl:text-5xl 2xl:font-extrabold lg:text-4xl lg:font-bold">50+ Beautiful rooms inspiration</h2>
-            <p className="text-xs sm:text-sm sm:font-semibold 2xl:text-lg 2xl:font-semibold lg:text-base lg:font-semibold">Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
+          <div className="flex flex-col justify-center w-40 gap-2 sm:gap-4 lg:gap-6 sm:w-60 lg:w-full">
+            <h2 className="text-base font-bold sm:text-lg 2xl:text-5xl 2xl:font-extrabold lg:text-4xl lg:font-bold">+50 Hermosas habitaciones de inspiracion</h2>
+            <p className="text-xs sm:text-sm sm:font-semibold 2xl:text-lg 2xl:font-semibold lg:text-base lg:font-semibold">Nuestro diseñador ya creó muchos prototipos hermosos de habitaciones que te inspiran</p>
             <div>
-              <button className="comic-button2 px-4 sm:px-9 sm:py-3 2xl:px-12 2xl:py-4 lg:text-lg">Explore More</button>
+              <button className="px-4 comic-button2 sm:px-9 sm:py-3 2xl:px-12 2xl:py-4 lg:text-lg">Explorar Más</button>
             </div>
           </div>
 
-          <div className="2xl:px-20 xl:px-10 flex flex-col justify-end hidden-mobile">
+          <div className="flex flex-col justify-end 2xl:px-20 xl:px-10 hidden-mobile">
             <img src={Sala2} alt="Sala2" className="w-80 xl:w-96 hidden-mobile" />
-            <div className="absolute flex flex-row m-4 items-end hidden-mobile">
-              <div className=" bg-white opacity-80 p-6 hidden-mobile">
-                <h2 className="text-black font-semibold text-md">Bed Room</h2>
-                <p className="font-bold text-black text-2xl">Inner Peace</p>
+            <div className="absolute flex flex-row items-end m-4 hidden-mobile">
+              <div className="p-6 bg-white opacity-80 hidden-mobile">
+                <h2 className="font-semibold text-black text-md">Dormitorio</h2>
+                <p className="text-2xl font-bold text-black">Paz Interior</p>
               </div>
               <div className=" hidden-mobile">
-                <button className="bg-orange-500 hover:bg-white duration-300 hover:text-orange-500 border-2 hover:border-orange-500 text-white px-5 py-3"><i class="fa-solid fa-arrow-right"></i></button>
+                <button className="px-5 py-3 text-white duration-300 bg-orange-500 border-2 hover:bg-white hover:text-orange-500 hover:border-orange-500"><i class="fa-solid fa-arrow-right"></i></button>
               </div>
             </div>
           </div>
 
-        <div className="flex justify-center items-center">
+        <div className="flex items-center justify-center">
           <Slider {...settings} className="w-32 sm:w-52 sm:h-6/7 2xl:w-96 lg:w-64 xl:w-80 2xl:h-5/6 lg:h-6/7">
             <div>
               <img src={Slide1} alt="image1" />
@@ -252,9 +252,9 @@ function Home() {
       <div className="w-full h-full pb-20 lg:pb-28">
         <div className="lg:w-[80%] w-[95%] mx-auto">
 
-          <div className="text-center mb-8">
-            <h3 className="font-semibold text-sm sm:text-lg">Share your setup with</h3>
-            <h2 className="font-bold text-2xl sm:text-3xl 2xl:font-extrabold 2xl:text-5xl lg:font-bold lg:text-4xl">#FurniroFurniture</h2>
+          <div className="mb-8 text-center">
+            <h3 className="text-sm font-semibold sm:text-lg">Comparte tu estilo con</h3>
+            <h2 className="text-2xl font-bold sm:text-3xl 2xl:font-extrabold 2xl:text-5xl lg:font-bold lg:text-4xl">#FurniroFurniture</h2>
           </div>
           
           <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 lg:gap-4">
@@ -321,40 +321,40 @@ function Home() {
           </div>
 
           <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Links</h2>
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Enlaces</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Home</a>
+                  <a href="#" class="hover:underline">Incio</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Shop</a>
+                  <a href="#" class="hover:underline">Tienda</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">About</a>
+                  <a href="#" class="hover:underline">Nostros</a>
                 </li>
               </ul>
           </div>
 
           <div className="mr-6 lg:mr-0">
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Help</h2>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Ayuda</h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="#" class="hover:underline ">Payment Options</a>
+                  <a href="#" class="hover:underline ">Opciones de Pago</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Returns</a>
+                  <a href="#" class="hover:underline">Devoluciones</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Privacy Policies</a>
+                  <a href="#" class="hover:underline">Políticas de Privacidad</a>
                 </li>
             </ul>
           </div>
           
           <div>
-            <h2 class="mb-5 text-sm font-semibold text-gray-900 uppercase ">Newsletter</h2>
-            <div className="xl:flex xl:flex-row gap-4 lg:flex-col">
-              <input type="text" className="text-sm lg:text-base px-0 lg:px-0 border-b-2 border-0 border-orange-500 focus:border-orange-500 focus:outline-none focus:ring-0 lg:mb-4 xl:mb-0" placeholder="Enter your email address"/>
-                <button className="text-sm sm:text-base font-semibold sm:font-bold xl:border-b-2 comic-button px-4 py-2 mt-4 lg:mt-0">SUBSCRIBE</button>
+            <h2 class="mb-5 text-sm font-semibold text-gray-900 uppercase ">Boletin Informativo</h2>
+            <div className="gap-4 xl:flex xl:flex-row lg:flex-col">
+              <input type="text" className="px-0 text-sm border-0 border-b-2 border-orange-500 lg:text-base lg:px-0 focus:border-orange-500 focus:outline-none focus:ring-0 lg:mb-4 xl:mb-0" placeholder="Ingresa tu correo"/>
+                <button className="px-4 py-2 mt-4 text-sm font-semibold sm:text-base sm:font-bold xl:border-b-2 comic-button lg:mt-0">SUBSCRIBIRSE</button>
             </div>
           </div>
 
