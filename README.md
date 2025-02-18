@@ -1,8 +1,21 @@
-# React + Vite
+# Landing page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pagina creada solo visualmente, no hay parte logica (JavaScript), diseñado creado como ejemplo para una tienda de muebles.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías  
+- React.js  
+- Vite  
+- TailwindCSS  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📥 Instalación  
+1. Clona el repositorio:  
+
+   git clone https://github.com/JoseSanchez90/Ecommerce-Furniro.git
+
+2. Instala Dependencias:
+
+   npm install
+
+3. Ejecuta el Proyecto:
+
+   npm run dev
