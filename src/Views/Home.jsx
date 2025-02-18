@@ -318,6 +318,7 @@ function Home() {
               </a>
               <p className="text-xs sm:text-sm lg:text-base">San Martin de Porres</p>
               <p className="text-xs sm:text-sm lg:text-base">Lima - Perú</p>
+              <p className="text-xs sm:text-sm lg:text-base">Hecho por: <a href="https://josesanchez.vercel.app/" target="_blank" className="font-bold">Jose Sanchez</a></p>
           </div>
 
           <div>
