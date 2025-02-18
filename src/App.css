@@ -130,6 +130,6 @@
 /* FLECHAS */
 
 .custom-next-arrow, .custom-prev-arrow {
-  color: black !important; /* Cambia el color de las flechas */
+  background: black !important; /* Cambia el color de las flechas */
   z-index: 1; /* Asegúrate de que las flechas estén por encima del contenido */
 }

@@ -207,9 +207,9 @@ function Home() {
       {/* ROOMS INSPIRATION */}
 
       <div className="w-full h-full pb-24 2xl:pb-40 lg:pb-32">
-        <div className="bg-orange-200 h-80 sm:h-[80%] sm:py-16 sm:px-28 lg:py-16 lg:px-20 px-6 mx-auto sm:grid sm:grid-cols-3 flex justify-center gap-3 sm:gap-5">
+        <div className="bg-orange-200 h-80 sm:h-[80%] sm:py-16 sm:px-28 lg:py-16 lg:px-20 px-4 mx-auto sm:grid sm:grid-cols-3 flex justify-center gap-3 sm:gap-5">
 
-          <div className="flex flex-col justify-center w-40 gap-2 sm:gap-4 lg:gap-6 sm:w-60 lg:w-full">
+          <div className="flex flex-col justify-center gap-2 sm:gap-4 lg:gap-6 w-full pr-8">
             <h2 className="text-base font-bold sm:text-lg 2xl:text-5xl 2xl:font-extrabold lg:text-4xl lg:font-bold">+50 Hermosas habitaciones de inspiracion</h2>
             <p className="text-xs sm:text-sm sm:font-semibold 2xl:text-lg 2xl:font-semibold lg:text-base lg:font-semibold">Nuestro diseñador ya creó muchos prototipos hermosos de habitaciones que te inspiran</p>
             <div>
@@ -230,7 +230,7 @@ function Home() {
             </div>
           </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center pr-8 lg:pr-0">
           <Slider {...settings} className="w-32 sm:w-52 sm:h-6/7 2xl:w-96 lg:w-64 xl:w-80 2xl:h-5/6 lg:h-6/7">
             <div>
               <img src={Slide1} alt="image1" />
