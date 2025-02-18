@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -63,7 +63,7 @@ function Home() {
 
           <div className="lg:hidden">
             <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="flex items-center" tabIndex="0">
-            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM17 17.25H7C6.59 17.25 6.25 16.91 6.25 16.5C6.25 16.09 6.59 15.75 7 15.75H17C17.41 15.75 17.75 16.09 17.75 16.5C17.75 16.91 17.41 17.25 17 17.25ZM17 12.75H7C6.59 12.75 6.25 12.41 6.25 12C6.25 11.59 6.59 11.25 7 11.25H17C17.41 11.25 17.75 11.59 17.75 12C17.75 12.41 17.41 12.75 17 12.75ZM17 8.25H7C6.59 8.25 6.25 7.91 6.25 7.5C6.25 7.09 6.59 6.75 7 6.75H17C17.41 6.75 17.75 7.09 17.75 7.5C17.75 7.91 17.41 8.25 17 8.25Z" fill="#DC7633"></path> </g></svg>
+            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM17 17.25H7C6.59 17.25 6.25 16.91 6.25 16.5C6.25 16.09 6.59 15.75 7 15.75H17C17.41 15.75 17.75 16.09 17.75 16.5C17.75 16.91 17.41 17.25 17 17.25ZM17 12.75H7C6.59 12.75 6.25 12.41 6.25 12C6.25 11.59 6.59 11.25 7 11.25H17C17.41 11.25 17.75 11.59 17.75 12C17.75 12.41 17.41 12.75 17 12.75ZM17 8.25H7C6.59 8.25 6.25 7.91 6.25 7.5C6.25 7.09 6.59 6.75 7 6.75H17C17.41 6.75 17.75 7.09 17.75 7.5C17.75 7.91 17.41 8.25 17 8.25Z" fill="#DC7633"></path> </g></svg>
             </button>
 
             {isMobileMenuOpen && (
@@ -150,12 +150,12 @@ function Home() {
       {/* PRODUCTS */}
 
       <div className="w-full h-full bg-gray-100">
-        <div className="2xl:w-[70%] pb-20 2xl:pb-32 lg:pb-28 mx-auto lg:w-[80%]">
+        <div className="pb-20 2xl:pb-32 lg:pb-28 mx-auto lg:w-[80%]">
           <div className="text-center">
             <h2 className="mb-12 text-2xl font-bold sm:text-3xl">Nuestros Productos</h2>
           </div>
 
-          <div className="grid grid-cols-2 gap-2 px-2 mx-auto lg:px-0 sm:grid-cols-3 lg:grid-cols-4 sm:gap-3 lg:gap-5 2xl:gap-12">
+          <div className="grid grid-cols-2 gap-2 mx-auto sm:grid-cols-3 lg:grid-cols-4 sm:gap-3 lg:gap-5">
 
           {products.map((product) => (
             <div key={product.id} className="relative bg-gray-200 cursor-pointer sm:w-56 lg:w-64 2xl:w-72" 
@@ -168,9 +168,9 @@ function Home() {
                   <div className="absolute inset-0 bg-black opacity-50"></div>
                       <button className="z-10 realtive">Añadir al carrito</button>
                     <div className="flex flex-col gap-3 2xl::flex-row lg:gap-5">
-                      <a className="text-sm text-white cursor-pointer hover:text-orange-400 lg:text-base" style={{ position: 'relative', zIndex: 1 }}><i class="fa-solid fa-share-nodes"></i> Compartir</a>
-                      <a className="text-sm text-white cursor-pointer hover:text-orange-400 lg:text-base" style={{ position: 'relative', zIndex: 1 }}><i class="fa-solid fa-code-compare"></i> Comparar</a>
-                      <a className="text-sm text-white cursor-pointer hover:text-orange-400 lg:text-base" style={{ position: 'relative', zIndex: 1 }}><i class="fa-regular fa-heart"></i> Me gusta</a>
+                      <a className="text-sm text-white cursor-pointer hover:text-orange-400 lg:text-base" style={{ position: 'relative', zIndex: 1 }}><i className="fa-solid fa-share-nodes"></i> Compartir</a>
+                      <a className="text-sm text-white cursor-pointer hover:text-orange-400 lg:text-base" style={{ position: 'relative', zIndex: 1 }}><i className="fa-solid fa-code-compare"></i> Comparar</a>
+                      <a className="text-sm text-white cursor-pointer hover:text-orange-400 lg:text-base" style={{ position: 'relative', zIndex: 1 }}><i className="fa-regular fa-heart"></i> Me gusta</a>
                     </div>
                 </div>
               )}
@@ -225,7 +225,7 @@ function Home() {
                 <p className="text-2xl font-bold text-black">Paz Interior</p>
               </div>
               <div className=" hidden-mobile">
-                <button className="px-5 py-3 text-white duration-300 bg-orange-500 border-2 hover:bg-white hover:text-orange-500 hover:border-orange-500"><i class="fa-solid fa-arrow-right"></i></button>
+                <button className="px-5 py-3 text-white duration-300 bg-orange-500 border-2 hover:bg-white hover:text-orange-500 hover:border-orange-500"><i className="fa-solid fa-arrow-right"></i></button>
               </div>
             </div>
           </div>
@@ -257,41 +257,41 @@ function Home() {
             <h2 className="text-2xl font-bold sm:text-3xl 2xl:font-extrabold 2xl:text-5xl lg:font-bold lg:text-4xl">#FurniroFurniture</h2>
           </div>
           
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 lg:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 lg:gap-4">
 
-              <div class="grid gap-2 sm:gap-3 lg:gap-4">
+              <div className="grid gap-2 sm:gap-3 lg:gap-4">
                   <div className="grid content-end cursor-pointer">
-                      <img class="h-auto max-w-full rounded-lg hover:scale-105 duration-200" src="https://images.unsplash.com/photo-1630585308572-f53438fc684f?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <img className="h-auto max-w-full rounded-lg hover:scale-105 duration-200" src="https://images.unsplash.com/photo-1630585308572-f53438fc684f?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                   </div>
                   <div className="cursor-pointer">
-                      <img class="h-auto max-w-full rounded-lg hover:scale-105 duration-200" src="https://images.unsplash.com/photo-1617228069096-4638a7ffc906?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <img className="h-auto max-w-full rounded-lg hover:scale-105 duration-200" src="https://images.unsplash.com/photo-1617228069096-4638a7ffc906?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                   </div>
               </div>
               
-              <div class="grid gap-2 sm:gap-3 lg:gap-4 cursor-pointer">
+              <div className="grid gap-2 sm:gap-3 lg:gap-4 cursor-pointer">
                   <div className="grid content-end ">
-                      <img class="h-auto max-w-full rounded-lg hover:scale-105 duration-200 " src="https://images.unsplash.com/photo-1586105251261-72a756497a11?q=80&w=2158&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <img className="h-auto max-w-full rounded-lg hover:scale-105 duration-200 " src="https://images.unsplash.com/photo-1586105251261-72a756497a11?q=80&w=2158&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                   </div>
                   <div className="cursor-pointer ">
-                      <img class="h-auto max-w-full rounded-lg hover:scale-105 duration-200 " src="https://images.unsplash.com/photo-1559595879-24636b3222a4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <img className="h-auto max-w-full rounded-lg hover:scale-105 duration-200 " src="https://images.unsplash.com/photo-1559595879-24636b3222a4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                   </div>
               </div>
 
-              <div class="grid gap-2 sm:gap-3 lg:gap-4 hidden-mobile2">
+              <div className="grid gap-2 sm:gap-3 lg:gap-4 hidden-mobile2">
                   <div className="grid content-end sm:cursor-pointer hidden-mobile2">
-                      <img class="h-auto max-w-full rounded-lg hover:scale-105 duration-200 hidden-mobile2" src="https://images.unsplash.com/photo-1558882224-dda166733046?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <img className="h-auto max-w-full rounded-lg hover:scale-105 duration-200 hidden-mobile2" src="https://images.unsplash.com/photo-1558882224-dda166733046?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                   </div>
                   <div className="sm:cursor-pointer hidden-mobile2">
-                      <img class="h-auto max-w-full rounded-lg hover:scale-105 duration-200 hidden-mobile2" src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <img className="h-auto max-w-full rounded-lg hover:scale-105 duration-200 hidden-mobile2" src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                   </div>
               </div>
 
-              <div class="grid gap-2 sm:gap-3 lg:gap-4 lg:hidden-mobile">
+              <div className="grid gap-2 sm:gap-3 lg:gap-4 lg:hidden-mobile">
                   <div className="grid content-end lg:cursor-pointer lg:hidden-mobile">
-                      <img class="h-auto max-w-full rounded-lg hover:scale-105 duration-200 hidden-mobile" src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <img className="h-auto max-w-full rounded-lg hover:scale-105 duration-200 hidden-mobile" src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                   </div>
                   <div className="lg:cursor-pointer lg:hidden-mobile">
-                      <img class="h-auto max-w-full rounded-lg hover:scale-105 duration-200 hidden-mobile" src="https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <img className="h-auto max-w-full rounded-lg hover:scale-105 duration-200 hidden-mobile" src="https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                   </div>
               </div>
 
@@ -304,54 +304,54 @@ function Home() {
 
       
 
-<hr class="my-8" />
+<hr className="my-8" />
 
-  <footer class="pb-2">
+  <footer className="pb-2">
 
-    <div class="w-full py-6 lg:py-8 lg:px-20 sm:px-10 px-5">
-        <div class="lg:w-full w-11/12 grid sm:grid-cols-4 grid-cols-2">
+    <div className="w-full py-6 lg:py-8 lg:px-20 sm:px-10 px-5">
+        <div className="lg:w-full w-11/12 grid sm:grid-cols-4 grid-cols-2">
 
-          <div class="">
-              <a href="#" class="flex flex-col lg:flex-row items-start mb-2 lg:mb-4 gap-2">
-                  <img src={Logo} class="h-8" alt="Logo" />
-                  <span class="self-start text-2xl font-semibold">Furniro</span>
+          <div className="">
+              <a href="#" className="flex flex-col lg:flex-row items-start mb-2 lg:mb-4 gap-2">
+                  <img src={Logo} className="h-8" alt="Logo" />
+                  <span className="self-start text-2xl font-semibold">Furniro</span>
               </a>
               <p className="text-xs sm:text-sm lg:text-base">San Martin de Porres</p>
               <p className="text-xs sm:text-sm lg:text-base">Lima - Perú</p>
           </div>
 
           <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Enlaces</h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Incio</a>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Enlaces</h2>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">Incio</a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Tienda</a>
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">Tienda</a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Nostros</a>
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">Nostros</a>
                 </li>
               </ul>
           </div>
 
           <div className="mr-6 lg:mr-0">
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Ayuda</h2>
-            <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline ">Opciones de Pago</a>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Ayuda</h2>
+            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline ">Opciones de Pago</a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Devoluciones</a>
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">Devoluciones</a>
                 </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Políticas de Privacidad</a>
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">Políticas de Privacidad</a>
                 </li>
             </ul>
           </div>
           
           <div>
-            <h2 class="mb-5 text-sm font-semibold text-gray-900 uppercase ">Boletin Informativo</h2>
+            <h2 className="mb-5 text-sm font-semibold text-gray-900 uppercase ">Boletin Informativo</h2>
             <div className="gap-4 xl:flex xl:flex-row lg:flex-col">
               <input type="text" className="px-0 text-sm border-0 border-b-2 border-orange-500 lg:text-base lg:px-0 focus:border-orange-500 focus:outline-none focus:ring-0 lg:mb-4 xl:mb-0" placeholder="Ingresa tu correo"/>
                 <button className="px-4 py-2 mt-4 text-sm font-semibold sm:text-base sm:font-bold xl:border-b-2 comic-button lg:mt-0">SUBSCRIBIRSE</button>
